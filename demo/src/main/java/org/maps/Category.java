@@ -6,13 +6,9 @@ import java.util.Set;
 
 /**
  * Category - Representa una categoría de productos
- * 
+ *
  * Encapsula el nombre de la categoría y sus productos asociados.
  * Implementa Comparable para permitir ordenamiento.
- * 
- * @author Alejandro Sagastume
- * @author Jimena Vasquez
- * @version 1.0
  */
 public class Category implements Comparable<Category> {
     
@@ -66,9 +62,7 @@ public class Category implements Comparable<Category> {
      * @return Lista de productos ordenada
      */
     public List<String> getProductsSorted() {
-        return products.stream()
-                .sorted()
-                .toList();
+        return products.stream().sorted().toList();
     }
     
     /**

@@ -7,13 +7,8 @@ import java.util.TreeMap;
 
 /**
  * Factory - Implementación del Patrón de Diseño Factory
- * 
  * Crea instancias de diferentes implementaciones de Map en tiempo de ejecución.
  * Permite seleccionar entre HashMap, TreeMap y LinkedHashMap.
- * 
- * @author Alejandro Sagastume
- * @author Jimena Vasquez
- * @version 1.0
  */
 public class Factory {
     

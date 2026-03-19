@@ -1,13 +1,13 @@
-Mueble de terraza|Mesas de jardín
-Mueble de terraza|Sillas de jardín
-Mueble de terraza|Conjuntos mesas y sillas de jardín
+Mueble de terraza|Mesas de jardin
+Mueble de terraza|Sillas de jardin
+Mueble de terraza|Conjuntos mesas y sillas de jardin
 Mueble de terraza|Mesas de Ping Pong exteriores
 Sillones de masaje|Cojines y colchonetas de masaje
-Sillones de masaje|Sillones relax y sofás de masajes
+Sillones de masaje|Sillones relax y sofas de masajes
 Sillones de masaje|Sillones de masajes avanzados
-Sillones de masaje|Sofás camas
+Sillones de masaje|Sofas camas
 Bebidas|Cerveza tibetana Barley
-Bebidas|Té frios
+Bebidas|Te frios
 Bebidas|Coca cola 1 litro
 Bebidas|Coca cola 2 litros
 Condimentos|Sirope de regaliz
@@ -22,8 +22,8 @@ Carnes|Pollo
 Carnes|Cerdo
 Carnes|Camarones
 Carnes|Pescados
-Lácteos|Queso de cabra
-Lácteos|Queso Manchego
-Lácteos|Leche descremada
-Lácteos|Leche deslactosada
-Lácteos|Leche entera
+Lacteos|Queso de cabra
+Lacteos|Queso Manchego
+Lacteos|Leche descremada
+Lacteos|Leche deslactosada
+Lacteos|Leche entera
