@@ -30,7 +30,7 @@ MAPS/
 ├── README.md
 ├── .gitignore
 ├── inventario.txt
-└── demo/
+└── demo/           <--- TRABAJAR DESDE AQUÍ
     ├── pom.xml
     ├── src/
     │   ├── main/
@@ -48,7 +48,7 @@ MAPS/
 
 ## Requisitos
 
-- Java 27 o superior
+- Java 27 
 - Maven 3.6+ (recomendado)
 
 ## Instalación
@@ -56,7 +56,7 @@ MAPS/
 ### 1. Clonar el repositorio
 ```bash
 git clone https://github.com/AlejandroSagastume/MAPS
-cd MAPS
+cd demo
 ```
 
 ### 2. Verificar instalación de Java
@@ -84,21 +84,6 @@ Compila el proyecto:
 mvn clean compile
 ```
 
-Ejecuta el programa:
-```bash
-mvn exec:java -Dexec.mainClass="org.maps.Main"
-```
-
-### Opción 2: Sin Maven
-
-Ve a la carpeta de código fuente:
-```bash
-cd demo/src/main/java/org/maps
-javac *.java
-cd ../../../../../
-java -cp demo/src/main/java org.maps.Main
-```
-
 ## Cambiar Implementación de Map
 
 El programa permite cambiar entre tres implementaciones de Map.
@@ -122,7 +107,6 @@ Después de cambiar, recompila:
 ```bash
 cd demo
 mvn clean compile
-mvn exec:java -Dexec.mainClass="org.maps.Main"
 ```
 
 ## Archivo de Datos
@@ -202,12 +186,6 @@ Factory.MapType mapType = Factory.MapType.fromValue(opcion);
 InventoryManager inventoryManager = new InventoryManager(mapType);
 ```
 
-### MVC (Modelo-Vista-Controlador)
-
-- **Modelo**: `InventoryManager.java`, `Category.java`
-- **Vista**: `Main.java` (interfaz de usuario)
-- **Controlador**: `Main.java` (lógica de menú)
-
 ## Dependencias
 
 El proyecto utiliza las siguientes librerías (gestionadas automáticamente por Maven):
@@ -247,7 +225,7 @@ demo/
 
 - **Java 27** - Lenguaje de programación
 - **Maven** - Gestión de dependencias y construcción
-- **Git/GitHub** - Control de versiones
+- **GitHub** - Control de versiones
 - **Collections Framework** - HashMap, TreeMap, LinkedHashMap
 
 ## Implementaciones de Map
@@ -281,6 +259,3 @@ demo/
 - **Universidad del Valle de Guatemala**
 - **Hoja de Trabajo No. 6**
 
-## Licencia
-
-Este proyecto es parte del curso de Algoritmos y Estructura de Datos de la Universidad del Valle de Guatemala.
