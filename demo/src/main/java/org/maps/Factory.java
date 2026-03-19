@@ -12,6 +12,7 @@ import java.util.TreeMap;
  * Permite seleccionar entre HashMap, TreeMap y LinkedHashMap.
  * 
  * @author Alejandro Sagastume
+ * @author Jimena Vasquez
  * @version 1.0
  */
 public class Factory {

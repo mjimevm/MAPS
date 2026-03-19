@@ -11,6 +11,7 @@ import java.util.Set;
  * Implementa Comparable para permitir ordenamiento.
  * 
  * @author Alejandro Sagastume
+ * @author Jimena Vasquez
  * @version 1.0
  */
 public class Category implements Comparable<Category> {
