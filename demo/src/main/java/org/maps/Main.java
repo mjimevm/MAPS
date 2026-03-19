@@ -92,9 +92,7 @@ public class Main {
         
         // Mostrar todas las categorías disponibles
         System.out.println("Categorías disponibles:");
-        inventoryManager.obtenerNombresCategorias().stream()
-                .sorted()
-                .forEach(c -> System.out.println("  - " + c));
+        inventoryManager.obtenerNombresCategorias().stream().sorted().forEach(c -> System.out.println("  - " + c));
         
         // Pedir categoría
         System.out.print("Ingrese la categoría: ");
@@ -172,7 +170,7 @@ public class Main {
         }
     }
     
-    // OPERACIÓN 5: MOSTRAR INVENTARIO COMPLETO
+    // OPERACIÓN 5: MOSTRAR INVENTARIO COMPLETO sin orden
     static void opcion5() {
         System.out.println("\n--- Inventario completo de la tienda ---");
         
@@ -187,18 +185,21 @@ public class Main {
         });
     }
     
-    // OPERACIÓN 6: MOSTRAR INVENTARIO COMPLETO ORDENADO POR CATEGORÍA
+    // OPERACIÓN 6: MOSTRAR PRODUCTO Y CATEGORÍA EXISTENTES, ORDENADO POR CATEGORÍA (solo los que existen)
+
     static void opcion6() {
         System.out.println("\n--- Inventario completo (ordenado por categoría) ---");
-        
-        // Obtener categorías ordenadas
         inventoryManager.obtenerInventarioCompletoOrdenado().forEach(categoria -> {
-            // Mostrar nombre de categoría y cantidad de productos
+            // Mostrar nombre de categoría
             System.out.println("Categoría: " + categoria.getName());
-            // Mostrar todos los productos de esa categoría
-            categoria.getProductsSorted().forEach(producto -> 
-                System.out.println("  - " + producto)
-            );
+            // Mostrar solo los productos de esa categoría que existen en el inventario del usuario
+            categoria.getProductsSorted().forEach(producto -> {
+                String clave = producto + " (" + categoria.getName() + ")";
+                int cantidad = inventoryManager.obtenerInventarioUsuario().getOrDefault(clave, 0);
+                if (cantidad > 0) {
+                    System.out.println("  - " + producto + " (Cantidad: " + cantidad + ")");
+                }
+            });
         });
     }
 }
