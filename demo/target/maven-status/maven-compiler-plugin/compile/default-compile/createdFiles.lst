@@ -1,0 +1,6 @@
+org\maps\Factory.class
+org\maps\TXTReader.class
+org\maps\Category.class
+org\maps\Main.class
+org\maps\InventoryManager.class
+org\maps\Factory$MapType.class
